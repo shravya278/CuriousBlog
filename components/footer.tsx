@@ -3,7 +3,7 @@ import {CMS_NAME} from '../lib/constants'
 
 export default function Footer() {
   return (
-    <footer class="footer footer-center bg-primary text-primary-content p-10">
+    <footer className="footer footer-center bg-primary text-primary-content p-10">
   <aside>
     <svg
       width="50"
