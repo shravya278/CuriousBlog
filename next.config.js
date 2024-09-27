@@ -5,11 +5,15 @@ if (!process.env.WORDPRESS_API_URL) {
   `)
 }
 
+// Use the URL constructor to reliably extract the domain
+const wpUrl = new URL(process.env.WORDPRESS_API_URL);
+const wpDomain = wpUrl.hostname;
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
     domains: [
-      process.env.WORDPRESS_API_URL.match(/(?!(w+)\.)\w*(?:\w+\.)+\w+/)[0], // Valid WP Image domain.
+      wpDomain, // Valid WordPress domain parsed from the URL.
       '0.gravatar.com',
       '1.gravatar.com',
       '2.gravatar.com',
