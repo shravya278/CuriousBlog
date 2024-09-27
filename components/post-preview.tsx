@@ -19,15 +19,15 @@ export default function PostPreview({
         src={coverImage.node.sourceUrl}
         alt={title} />
     </figure>
-    <div class="card-body">
-      <h2 class="card-title">{title}</h2>
+    <div className="card-body">
+      <h2 className="card-title">{title}</h2>
       <div
         className="text-lg leading-relaxed mb-4"
         dangerouslySetInnerHTML={{ __html: excerpt }}
       />
       <Avatar author={author} />
-      <div class="card-actions justify-end">
-        <Link class="btn btn-primary" href={`/posts/${slug}`}>Learn more!</Link>
+      <div className="card-actions justify-end">
+        <Link className="btn btn-primary" href={`/posts/${slug}`}>Learn more!</Link>
       </div>
     </div>
     </div>

@@ -12,19 +12,19 @@ export default function HeroPost({
   slug,
 }) {
   return (    
-    <div class="card w-full glass">
+    <div className="card w-full glass">
     <figure>
       <img style={{minHight:'400px'}} className={'w-full'}
         src={coverImage.node.sourceUrl}
         alt={title} />
     </figure>
-    <div class="card-body">
-      <h2 class="card-title">{title}</h2>
+    <div className="card-body">
+      <h2 className="card-title">{title}</h2>
       <Date dateString={date} />
       <Avatar author={author} />
       <p>{title}</p>
-      <div class="card-actions justify-end">
-        <Link class="btn btn-primary" href={`/posts/${slug}`}>Learn more!</Link>
+      <div className="card-actions justify-end">
+        <Link className="btn btn-primary" href={`/posts/${slug}`}>Learn more!</Link>
       </div>
     </div>
   </div>
