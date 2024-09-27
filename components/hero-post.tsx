@@ -14,7 +14,7 @@ export default function HeroPost({
   return (    
     <div className="card w-full glass">
     <figure>
-      <img style={{minHight:'400px'}} className={'w-full'}
+      <img style={{minHeight:'400px'}} className={'w-full'}
         src={coverImage.node.sourceUrl}
         alt={title} />
     </figure>
